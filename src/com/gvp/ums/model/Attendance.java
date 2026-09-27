@@ -5,9 +5,9 @@ public class Attendance{
     private Student student;
     private Course course;
     private String date;
-    private String status;
+    private AttendanceStatus status;
     // constructor
-    public Attendance(String attendanceId,Student student,Course course,String date,String status){
+    public Attendance(String attendanceId,Student student,Course course,String date,AttendanceStatus status){
         this.attendanceId = attendanceId;
         this.student = student;
         this.course = course;
@@ -31,7 +31,7 @@ public class Attendance{
         return date;
     }
 
-    public String getStatus() {
+    public AttendanceStatus getStatus() {
         return status;
     }
     @Override
@@ -44,7 +44,7 @@ public class Attendance{
             ", status='" + status + '\'' +
             '}';
     }
-    public void updateStatus(String status){
+    public void updateStatus(AttendanceStatus status){
         this.status = status;
     }
 }

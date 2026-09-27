@@ -1,6 +1,7 @@
 package com.gvp.ums.ui;
 
 import com.gvp.ums.model.Attendance;
+import com.gvp.ums.model.AttendanceStatus;
 import com.gvp.ums.model.Course;
 import com.gvp.ums.model.Student;
 
@@ -36,11 +37,11 @@ public class TestAttendance {
                 student,
                 course,
                 "20-08-2026",
-                "PRESENT"
+                AttendanceStatus.PRESENT
         );
 
         System.out.println(attendance);
-        attendance.updateStatus("ABSENT");
+        attendance.updateStatus(AttendanceStatus.ABSENT);
         System.out.println(attendance);
     }
 }
