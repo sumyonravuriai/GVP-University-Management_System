@@ -1,8 +1,9 @@
 package com.gvp.ums.ui;
 
-import com.gvp.ums.model.Student;
 import com.gvp.ums.model.Course;
 import com.gvp.ums.model.Enrollment;
+import com.gvp.ums.model.EnrollmentStatus;
+import com.gvp.ums.model.Student;
 
 public class TestEnrollment{
     public static void main(String[] args) {
@@ -34,11 +35,11 @@ public class TestEnrollment{
                 student,
                 course,
                 "18-08-2026",
-                "ACTIVE"
+                EnrollmentStatus.ACTIVE
         );
 
         System.out.println(enrollment);
-        enrollment.updateStatus("COMPLETED");
+        enrollment.updateStatus(EnrollmentStatus.COMPLETED);
         System.out.println(enrollment);
 
     }

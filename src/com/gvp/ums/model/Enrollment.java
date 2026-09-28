@@ -5,9 +5,9 @@ public class Enrollment{
     private Student student;
     private Course course;
     private String enrollmentDate;
-    private String status;
+    private EnrollmentStatus status;
     // constructors
-    public Enrollment(String enrollmentId,Student student,Course course,String enrollmentDate,String status){
+    public Enrollment(String enrollmentId,Student student,Course course,String enrollmentDate,EnrollmentStatus status){
         this.enrollmentId = enrollmentId;
         this.student = student;
         this.course =  course;
@@ -31,7 +31,7 @@ public class Enrollment{
         return enrollmentDate;
     }
 
-    public String getStatus() {
+    public EnrollmentStatus getStatus() {
         return status;
     }
     // toString()
@@ -46,7 +46,7 @@ public class Enrollment{
             '}';
     }
     // setter
-    public void updateStatus(String status){
+    public void updateStatus(EnrollmentStatus status){
         this.status = status;
     }
 
