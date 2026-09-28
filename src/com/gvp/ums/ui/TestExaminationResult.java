@@ -2,6 +2,7 @@ package com.gvp.ums.ui;
 
 import com.gvp.ums.model.Course;
 import com.gvp.ums.model.ExaminationResult;
+import com.gvp.ums.model.ResultStatus;
 import com.gvp.ums.model.Student;
 
 public class TestExaminationResult {
@@ -38,11 +39,11 @@ public class TestExaminationResult {
                 "Mid Examination",
                 82,
                 "A",
-                "PASS"
+                ResultStatus.FAIL
         );
 
         System.out.println(result);
-        result.updateResult(91,"A+","Pass");
+        result.updateResult(91,"A+",ResultStatus.PASS);
         System.out.println(result);
     }
     

@@ -7,10 +7,10 @@ public class ExaminationResult{
     private String examType;
     private int marks;
     private String grade;
-    private String status;
+    private ResultStatus status;
     // constructor
     public ExaminationResult(String resultId,Student student,Course course,
-    String examType, int marks,   String grade, String status) {
+    String examType, int marks,   String grade, ResultStatus status) {
 
         this.resultId = resultId;
         this.student = student;
@@ -45,7 +45,7 @@ public class ExaminationResult{
         return grade;
     }
 
-    public String getStatus() {
+    public ResultStatus getStatus() {
         return status;
     }
     @Override
@@ -61,7 +61,7 @@ public class ExaminationResult{
                 '}';
     }
     // setters
-    public void updateResult(int marks, String grade, String status) {
+    public void updateResult(int marks, String grade, ResultStatus status) {
         this.marks = marks;
         this.grade = grade;
         this.status = status;
