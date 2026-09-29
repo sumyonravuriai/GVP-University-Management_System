@@ -4,13 +4,13 @@ public class ExaminationResult{
     private String resultId;
     private Student student;
     private Course course;
-    private String examType;
+    private ExamType examType;
     private int marks;
     private String grade;
     private ResultStatus status;
     // constructor
     public ExaminationResult(String resultId,Student student,Course course,
-    String examType, int marks,   String grade, ResultStatus status) {
+    ExamType examType, int marks,   String grade, ResultStatus status) {
 
         this.resultId = resultId;
         this.student = student;
@@ -33,7 +33,7 @@ public class ExaminationResult{
         return course;
     }
 
-    public String getExamType() {
+    public ExamType getExamType() {
         return examType;
     }
 

@@ -1,6 +1,7 @@
 package com.gvp.ums.ui;
 
 import com.gvp.ums.model.Course;
+import com.gvp.ums.model.ExamType;
 import com.gvp.ums.model.ExaminationResult;
 import com.gvp.ums.model.ResultStatus;
 import com.gvp.ums.model.Student;
@@ -36,7 +37,7 @@ public class TestExaminationResult {
                 "RES001",
                 student,
                 course,
-                "Mid Examination",
+                ExamType.MID,
                 82,
                 "A",
                 ResultStatus.FAIL
