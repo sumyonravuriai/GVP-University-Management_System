@@ -22,6 +22,23 @@ public class TestStudentRepository{
         repository.addStudent(student1);
         repository.addStudent(student2);
 
+        Student foundStudent = repository.findStudentById("GVP001");
+        if(foundStudent != null){
+            System.out.println("Student found :");
+            System.out.println(foundStudent);
+        }
+        else{
+            System.out.println("Student not found.");
+        }
+
+        Student missingStudent = repository.findStudentById("GVP215");
+        if(missingStudent!=null){
+            System.out.println(missingStudent);
+        }
+        else{
+            System.out.println("Student not found.");
+        }
+
         List<Student> students = repository.getAllStudents();
 
         for(Student s:students){
